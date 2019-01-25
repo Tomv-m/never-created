@@ -1,0 +1,39 @@
+$primary-color:  #ECF0F4;
+$sec-color: #0A0B12;
+// $primary-color:  #0A0B12;
+// $sec-color: #ECF0F4;
+$accent-color: #EC2020;
+
+$text-opacity: .72;
+$sec-opacity: .15;
+
+// scrollbar
+// ::-webkit-scrollbar {
+//   width: 4px;
+// }
+//
+// ::-webkit-scrollbar-track {
+//   background-color: $sec-color;
+// }
+//
+// ::-webkit-scrollbar-thumb {
+//   background-color: $sec-color;
+// }
+
+// selector
+::selection {
+  background: rgba($sec-color, $sec-opacity);
+}
+
+::-moz-selection {
+  background: rgba($sec-color, $sec-opacity);
+}
+
+a.link {
+  text-decoration: none;
+  color: $sec-color;
+}
+
+.highlight {
+  cursor: pointer;
+}

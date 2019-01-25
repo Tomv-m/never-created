@@ -1,0 +1,381 @@
+@import url("https://use.typekit.net/bbo5fkd.css");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::selection {
+  background: rgba(10, 11, 18, 0.15);
+}
+
+::-moz-selection {
+  background: rgba(10, 11, 18, 0.15);
+}
+
+a.link {
+  text-decoration: none;
+  color: #0A0B12;
+}
+
+.highlight {
+  cursor: pointer;
+}
+
+body {
+  background: #ECF0F4;
+  color: #0A0B12;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#logo svg {
+  width: 32px;
+  height: 38px;
+}
+#logo svg .cls-1 {
+  fill: #0A0B12;
+}
+#logo svg .cls-2 {
+  fill: none;
+  stroke: #0A0B12;
+  stroke-width: 2.2px;
+}
+#logo svg .cls-3 {
+  opacity: 0.15;
+}
+
+#arrow {
+  width: 16px;
+  height: 16px;
+}
+#arrow .cls-1 {
+  fill: none;
+  stroke: #0A0B12;
+  stroke-width: 2px;
+}
+
+#pause {
+  width: 8px;
+  height: 12px;
+}
+#pause .cls-1 {
+  fill: none;
+  stroke: #0A0B12;
+  stroke-width: 2px;
+}
+
+#play {
+  width: 9px;
+  height: 11px;
+}
+#play .cls-1 {
+  fill: #0A0B12;
+}
+
+#error-line {
+  width: 496px;
+  height: 311px;
+}
+#error-line .cls-1 {
+  fill: #EC2020;
+}
+
+.slide-in .char {
+  color: #0A0B12;
+  animation-duration: 1.2s;
+  animation-delay: calc( 1s + (.07s * ( var(--char-index)) ));
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.wrapper {
+  margin: 0 8%;
+  box-sizing: border-box;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 55px;
+  z-index: 100;
+}
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline;
+  padding-left: 65px;
+}
+nav .contact {
+  text-align: right;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.bottom-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 55px;
+  z-index: 100;
+}
+.bottom-bar .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-bar #player {
+  cursor: pointer;
+  font-weight: 500;
+}
+.bottom-bar #player svg#play, .bottom-bar #player svg#pause {
+  margin-left: 10px;
+}
+.bottom-bar #player svg#play {
+  display: none;
+}
+.bottom-bar #player .bar {
+  position: relative;
+  height: 2px;
+  width: 155px;
+  margin-top: 10px;
+  background: rgba(10, 11, 18, 0.15);
+}
+.bottom-bar #player .bar .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #0A0B12;
+}
+.bottom-bar #scroll {
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.bottom-bar #scroll .scroll-bar {
+  position: relative;
+  bottom: -5px;
+  height: 25px;
+  width: 2px;
+  margin-left: 10px;
+  display: inline-block;
+  background: rgba(10, 11, 18, 0.15);
+}
+.bottom-bar #scroll .scroll-bar .scroll-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 2px;
+  background: #0A0B12;
+  animation: scroll 3s ease infinite;
+}
+.bottom-bar h2.name {
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 700;
+}
+
+@keyframes scroll {
+  0% {
+    top: 0;
+  }
+  75% {
+    top: 17px;
+  }
+}
+header {
+  position: relative;
+  height: 100vh;
+  z-index: 99;
+}
+header .wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .wrapper-content {
+  padding: 3%;
+  width: 50%;
+  box-sizing: border-box;
+}
+header .wrapper-content h1 {
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 700;
+  font-size: 3.5vw;
+  line-height: 1.2;
+}
+header .wrapper-content p {
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(10, 11, 18, 0.72);
+  margin-top: 25px;
+}
+header .movie {
+  max-height: 60vh;
+  overflow: hidden;
+}
+header .movie video {
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
+}
+
+.cursor {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  border: rgba(10, 11, 18, 0.15) 1px solid;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  width: 42px;
+  height: 42px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, opacity 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0A0B12, #ECF0F4);
+  opacity: 0.12;
+  z-index: -1;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.error-lines {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.error-lines #error-line {
+  position: absolute;
+  width: 36%;
+  height: auto;
+  transform: rotate(-20deg);
+}
+.error-lines #error-line.line-0 {
+  top: 3%;
+  right: 15%;
+}
+.error-lines #error-line.line-1 {
+  top: 28%;
+  left: -16%;
+}
+.error-lines #error-line.line-2 {
+  top: 36%;
+  right: -18%;
+}
+.error-lines #error-line.line-3 {
+  top: 55%;
+  left: 16%;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.lines .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.lines .line {
+  background: rgba(10, 11, 18, 0.15);
+  width: 1px;
+  height: 100vh;
+}
+
+#grain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: 5;
+}
+
+/*# sourceMappingURL=main.css.map */
